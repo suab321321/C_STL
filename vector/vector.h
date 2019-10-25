@@ -1,3 +1,4 @@
+
 typedef struct vec{
 	int val;
 	struct vec* next;

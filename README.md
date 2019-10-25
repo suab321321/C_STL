@@ -1,6 +1,6 @@
 Trying to replicate a stl libray in c
 
-We have a set and vector implementation in C.
+We have a map , set and vector implementation in C.
 
 Detailed List of APIs and its time complexity will be soon be uploaded.
 

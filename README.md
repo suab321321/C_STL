@@ -1,4 +1,4 @@
-Trying to replicate a stl libray in c
+ Replicate a stl libray in c
 
 We have a map , set and vector implementation in C.
 

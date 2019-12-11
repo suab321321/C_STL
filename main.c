@@ -1,16 +1,20 @@
 #include<stdio.h>
 //#include "set/set.h"
-#include "map/map.h"
-//
-void print(vec* hash,map* hash2){
-	if(hash==NULL)
-		printf("NULL\n");
-	vec* temp=hash;
-	while(temp!=NULL){
-		printf("\n%d",M_search(hash2,temp->val));
-		temp=temp->next;
-	}
-}
+//#include "map/map.h"
+//#include "vector/vector.h"
+
+//#include "stack/stack.h"
+#include "queue/queue.h"
+
+//void print(vec* hash,map* hash2){
+//	if(hash==NULL)
+//		printf("NULL\n");
+//	vec* temp=hash;
+//	while(temp!=NULL){
+//		printf("\n%d",M_search(hash2,temp->val));
+//		temp=temp->next;
+//	}
+//}
 //
 //void revPrint(vec* hash){
 //	while(hash!=NULL){
@@ -93,17 +97,58 @@ void print(vec* hash,map* hash2){
 //	preorder(hash);
 //}
 
+//void ForStack(){
+//	st* t=NULL;	ForQueue();
+
+//	popElement(&t);
+//	pushElement(&t,1);
+//	pushElement(&t,2);
+//	pushElement(&t,3);
+//	pushElement(&t,4);
+//	pushElement(&t,5);
+//	popElement(&t);
+//	printf("%d\n",getTop(&t));
+//	pushElement(&t,6);
+//	printf("%d\n",getTop(&t));
+//		while(t!=NULL){
+//		printf("%d ",getTop(&t));
+//		popElement(&t);
+//	}
+//}
+
+void ForQueue(){
+	qu* t;
+	pushFront(&t,1);
+	pushFront(&t,2);
+	pushFront(&t,3);
+	pushFront(&t,4);
+//	while(t!=NULL){
+//		printf("%d ",getFront(&t));
+//		popBack(&t);
+//	}
+	pushFront(&t,5);
+	popBack(&t);
+	pushFront(&t,6);
+	printf("%d",getFront(&t));
+	while(t!=NULL){
+		printf("%d ",getFront(&t));
+		popBack(&t);
+	}
+}
+
 int main(){
 //	ForVector();
 //	ForSet();
 //	test();
 	printf("It works");
-	map* hash=NULL;
-	M_add(&hash,1,10);
-	M_add(&hash,2,11);
-	M_add(&hash,3,12);
-	M_eraseT(&hash,3);
+//	map* hash=NULL;
+//	M_add(&hash,1,10);
+//	M_add(&hash,2,11);
+//	M_add(&hash,3,12);
+//	M_eraseT(&hash,3);
 //	vec* hash1=M_Itr(hash);
 //	print(hash1,hash);
-	M_destroy(&hash);
+//	M_destroy(&hash);
+//	ForStack();
+//	ForQueue();
 }

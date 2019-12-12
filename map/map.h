@@ -1,3 +1,6 @@
+#ifndef MAP_SEEN
+#define MAP_SEEN
+
 #include<stdlib.h>
 #include<stdio.h>
 #include<string.h>
@@ -24,3 +27,5 @@ void M_destroy(map**);
 int M_search(map*,int);
 
 vec* M_Itr(map*);
+
+#endif

@@ -1,3 +1,6 @@
+#ifndef SET_SEEN
+#define SET_SEEN
+
 #include<stdlib.h>
 #include<stdio.h>
 #include<string.h>
@@ -23,3 +26,5 @@ void destroy(tree**);
 tree* search(tree*,int);
 
 vec* Itr(tree*);
+
+#endif

@@ -1,3 +1,5 @@
+#ifndef VECTOR_SEEN
+#define VECTOR_SEEN
 
 typedef struct vec{
 	int val;
@@ -20,3 +22,5 @@ vec* find(vec**,int);
 vec* reverse(vec**);
 
 void clean(vec**);
+
+#endif
